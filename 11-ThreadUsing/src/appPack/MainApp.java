@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 public class MainApp {
 
 	private JFrame frame;
+	// bu bir açıklamadır.
 
 	/**
 	 * Launch the application.
