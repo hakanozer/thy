@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>13-Jax-Rs-Entry</display-name>
+ 
+  
+  
+  <servlet>
+        <servlet-name>HttpServletDispatcher</servlet-name>
+        <servlet-class>
+            org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher
+        </servlet-class>
+        <init-param>
+            <param-name>javax.ws.rs.core.Application</param-name>
+            <param-value>service.RegisterApplication</param-value>
+        </init-param>
+      
+        <!-- This is valid too. -->  
+        <!-- 
+      
+         <init-param>
+            <param-name>javax.ws.rs.Application</param-name>
+            <param-value>service.RegisterApplication</param-value>
+        </init-param>
+         -->
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>HttpServletDispatcher</servlet-name>
+        <url-pattern>/resteasy/*</url-pattern>  
+    </servlet-mapping>
+        
+        
+    <!-- 
+
+    resteasy.servlet.mapping.prefix
+    If the url-pattern for the Resteasy servlet-mapping is not /*
+    
+    http://localhost:8080/injavawetrust.resteasy/resteasy/messages/message
+     -->
+    
+    <context-param>
+        <param-name>resteasy.servlet.mapping.prefix</param-name>
+        <param-value>/resteasy</param-value>
+    </context-param>
+    
+  
+</web-app>

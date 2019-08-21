@@ -1,0 +1,21 @@
+package services;
+
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+//servisimiz /api ile başlayacak  
+public class RestApplication extends Application {
+
+	
+	private Set<Object> singletons = new HashSet<Object>();
+
+	public MessageApplication() {
+		singletons.add(new MessageRestService());
+	}
+
+	@Override
+	public Set<Object> getSingletons() {
+		return singletons;
+	}
+	
+}

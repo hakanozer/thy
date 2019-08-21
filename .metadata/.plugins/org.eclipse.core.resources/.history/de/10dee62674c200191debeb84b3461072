@@ -1,0 +1,21 @@
+package util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Model {
+	
+	public static List<User> dataResult() {
+		List<User> ls = new ArrayList<User>();
+		for (int i = 0; i < 10; i++) {
+			User u = new User();
+			u.setId(i);
+			u.setName("Ali " + i);
+			u.setSurname("Bilmem " + i);
+			ls.add(u);
+		}
+		return ls;
+	}
+	
+
+}

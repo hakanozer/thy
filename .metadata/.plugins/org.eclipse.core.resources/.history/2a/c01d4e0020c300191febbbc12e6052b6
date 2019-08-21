@@ -1,0 +1,25 @@
+package servicesRest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ws.rs.Path;
+
+@Path("/user")
+public class UserRest {
+	
+	
+	
+	public List<User> dataResult() {
+		List<User> ls = new ArrayList<User>();
+		for (int i = 0; i < 10; i++) {
+			User us = new User();
+			us.setId(i);
+			us.setName("Ahmet " + i);
+			us.setSurname("Bilmem : " + i);
+			ls.add(us);
+		}
+		return ls;
+	}
+
+}

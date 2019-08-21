@@ -1,0 +1,20 @@
+package services;
+
+import java.util.HashMap;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+@Path("/user")
+public class UserService {
+
+	@GET
+	@Path("/list")
+	public HashMap<String, Object> list() {
+		HashMap<String, Object> hm = new HashMap<>();
+		hm.put("statu", true);
+		return hm;
+	}
+	
+	
+}

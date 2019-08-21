@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="<a class="vglnk" href="http://www.w3.org/2001/XMLSchema-instance" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>w3</span><span>.</span><span>org</span><span>/</span><span>2001</span><span>/</span><span>XMLSchema</span><span>-</span><span>instance</span></a>"
+ xmlns="<a class="vglnk" href="http://java.sun.com/xml/ns/javaee" rel="nofollow"><span>http</span><span>://</span><span>java</span><span>.</span><span>sun</span><span>.</span><span>com</span><span>/</span><span>xml</span><span>/</span><span>ns</span><span>/</span><span>javaee</span></a>"
+xmlns:web="<a class="vglnk" href="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" rel="nofollow"><span>http</span><span>://</span><span>java</span><span>.</span><span>sun</span><span>.</span><span>com</span><span>/</span><span>xml</span><span>/</span><span>ns</span><span>/</span><span>javaee</span><span>/</span><span>web</span><span>-</span><span>app</span><span>_</span><span>2</span><span>_</span><span>5</span><span>.</span><span>xsd</span></a>"
+xsi:schemaLocation="<a class="vglnk" href="http://java.sun.com/xml/ns/javaee" rel="nofollow"><span>http</span><span>://</span><span>java</span><span>.</span><span>sun</span><span>.</span><span>com</span><span>/</span><span>xml</span><span>/</span><span>ns</span><span>/</span><span>javaee</span></a>
+<a class="vglnk" href="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" rel="nofollow"><span>http</span><span>://</span><span>java</span><span>.</span><span>sun</span><span>.</span><span>com</span><span>/</span><span>xml</span><span>/</span><span>ns</span><span>/</span><span>javaee</span><span>/</span><span>web</span><span>-</span><span>app</span><span>_</span><span>2</span><span>_</span><span>5</span><span>.</span><span>xsd</span></a>" id="WebApp_ID" version="2.5">
+  <display-name>RESTfulExample</display-name>
+ <servlet>
+        <servlet-name>jersey-serlvet</servlet-name>
+        <servlet-class>
+                     com.sun.jersey.spi.container.servlet.ServletContainer
+                </servlet-class>
+        <init-param>
+             <param-name>com.sun.jersey.config.property.packages</param-name>
+             <param-value>com.jwt.service</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>jersey-serlvet</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+ 
+</web-app>

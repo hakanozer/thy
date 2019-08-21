@@ -1,0 +1,14 @@
+package props;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Util {
+	
+	public List<User> dataResult() {
+		List<User> ls = new ArrayList<User>();
+		
+		return lsİ;
+	}
+
+}

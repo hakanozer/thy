@@ -1,0 +1,9 @@
+package props;
+
+import java.util.List;
+
+public interface UserInterface {
+
+	public List<User> dataResult();
+	
+}

@@ -1,0 +1,8 @@
+package props;
+
+public class User {
+	
+	private int id;
+	private String title;
+
+}

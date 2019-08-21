@@ -1,0 +1,11 @@
+#Tue Aug 20 00:41:17 EEST 2019
+vl=How many times during the day
+l=Request method (JAX-WS|GET|POST|PUT|DELETE|OPTIONS)
+ct=ws
+d=1566250877677
+c=0
+cmp=ws
+a=wstester
+cl=JAX-WS
+v=2.0.102
+s=0

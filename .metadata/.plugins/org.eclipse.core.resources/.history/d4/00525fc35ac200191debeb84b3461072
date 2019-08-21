@@ -1,0 +1,10 @@
+package services;
+
+import javax.ws.rs.Path;
+
+@Path("/user")
+public class UserService {
+
+	
+	
+}

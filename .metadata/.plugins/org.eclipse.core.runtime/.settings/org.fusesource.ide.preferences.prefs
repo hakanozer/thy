@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+stagingRepositories=fuse-internal,http\://download.eng.brq.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/;redhat-ea,https\://maven.repository.redhat.com/earlyaccess/all;fis-internal,http\://download-node-02.eng.bos.redhat.com/brewroot/repos/jb-fis-2.0-maven-build/latest/maven/;asf-snapshots,https\://repository.apache.org/content/groups/snapshots/;fuse-early-access,https\://repository.jboss.org/nexus/content/groups/ea/;syndesis_snapshots,https\://oss.sonatype.org/content/repositories/snapshots/

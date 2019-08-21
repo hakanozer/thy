@@ -1,0 +1,5 @@
+package servicesRest;
+
+public class UserRest {
+
+}

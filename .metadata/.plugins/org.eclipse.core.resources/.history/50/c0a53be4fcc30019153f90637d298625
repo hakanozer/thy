@@ -1,0 +1,11 @@
+package props;
+
+import java.util.List;
+
+public class Util {
+	
+	public List<User> dataResult() {
+		
+	}
+
+}

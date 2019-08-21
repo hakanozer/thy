@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-i18n-pt-BR.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-dbcp.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/jersey-container-servlet.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-i18n-ko.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/hk2-utils-2.4.0-b34.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-api.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/hk2-locator-2.4.0-b34.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/catalina-ant.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/catalina-storeconfig.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/annotations-api.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/javax.annotation-api-1.2.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/aopalliance-repackaged-2.4.0-b34.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/jaspic-api.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-jdbc.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-util.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/jersey-common.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/catalina.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-i18n-fr.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/catalina-tribes.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/javassist-3.18.1-GA.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/jersey-server.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/jersey-guava-2.22.2.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/jackson-all-1.9.0.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-i18n-ja.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/ecj-4.12.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/servlet-api.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-util-scan.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/jsp-api.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/websocket-api.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/org.osgi.core-4.2.0.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/validation-api-1.1.0.Final.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/el-api.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/jersey-media-jaxb.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-i18n-de.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/jasper-el.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/javax.inject-2.4.0-b34.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-websocket.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/osgi-resource-locator-1.0.1.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/jersey-container-servlet-core.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-jni.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/asm-debug-all-5.0.4.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/javax.servlet-api-3.0.1.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/jersey-client.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/genson-1.3.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/jasper.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/hk2-api-2.4.0-b34.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-coyote.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/catalina-ha.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/persistence-api-1.0.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-i18n-es.jar"/>
+  <path value="/Users/hakan/Documents/THY/13-Jax-RS/WebContent/WEB-INF/lib/jaxb-api-2.2.7.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-i18n-zh-CN.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-i18n-ru.jar"/>
+  <path value="/Users/hakan/Documents/apache-tomcat-9.0.22/lib/tomcat-i18n-cs.jar"/>
+ </paths>
+ <includes/>
+ <aliases/>
+ <uris/>
+</kb-project>
