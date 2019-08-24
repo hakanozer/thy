@@ -10,12 +10,11 @@ import util.Util;
 
 @Controller
 @RequestMapping("/admin")
-public class DashboardController {
+public class SettingsController {
 
-	@RequestMapping(value = "/dashboard", method = RequestMethod.GET)
-	public String dashBoard( HttpServletRequest req ) {
-		return Util.control(req, "dashboard");
+	@RequestMapping(value = "/settings", method = RequestMethod.GET)
+	public String settings( HttpServletRequest req ) {
+		return Util.control(req, "settings");
 	}
-	
 	
 }

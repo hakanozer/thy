@@ -109,7 +109,7 @@
         </div>
         <div class="row">
           
-          <h1>Welcome Dashboard</h1>
+          <h1>Welcome Settings</h1>
           
         </div>
       </div>
