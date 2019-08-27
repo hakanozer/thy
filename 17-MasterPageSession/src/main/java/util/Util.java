@@ -11,8 +11,15 @@ public class Util {
 		if(statu) {
 			return "redirect:/admin/";
 		}else {
-			link = page;
-			return "admin/"+page;
+			if (page.contains("redirect:")) {
+				link = page;
+				return page;
+			}else {
+				link = page;
+				return "admin/"+page;
+			}
+			
+			
 		}
 	}
 	

@@ -107,11 +107,87 @@
             </div>
           </div>
         </div>
+        
+        
         <div class="row">
-          
-          <h1>Welcome Dashboard</h1>
-          
+        	<div class="col-sm-6">
+        	<h1>Add Admin</h1>
+	        
+	        <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Quick Example</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form action='<s:url value="/admin/adminInsert"></s:url>' method="post" role="form">
+                <div class="card-body">
+                
+                <div class="form-group">
+                    <label for="exampleInputName">Name Surname</label>
+                    <input name="aname" type="text" class="form-control" id="exampleInputName" placeholder="Enter Name">
+                  </div>
+                
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input name="amail" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input name="apass" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                </div>
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+        	</div>
+        	<div class="col-sm-6">
+        	<h1>Admin List</h1>
+        	<div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Bordered Table</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>                  
+                    <tr>
+                      <th style="width: 10px">#</th>
+                      <th>Task</th>
+                      <th>Progress</th>
+                      <th style="width: 40px">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                  <c:if test="${ not empty ls }">
+                  	<c:forEach items="${ls }"  var="item" >
+                    <tr>
+                      <td>${item.aid }</td>
+                      <td>${item.aname }</td>
+                      <td>${item.amail }</td>
+                      <td>
+                      	<a href='<s:url value="/admin/deleteAdmin/${ item.aid }"></s:url>' class="btn btn-danger"  >Delete</a>
+                      </td>
+                    </tr>
+                    </c:forEach>
+                  </c:if>
+                    
+                    
+                    
+                  </tbody>
+                </table>
+              </div>
+             
+            </div>
+        	
+        	</div>
         </div>
+          
+          
+        
       </div>
     </section>
     <!-- /.content -->
