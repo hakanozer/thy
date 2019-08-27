@@ -1,8 +1,0 @@
-package services;
-
-import javax.ws.rs.ApplicationPath;
-
-@ApplicationPath("/api") // servisimiz /api ile başlayacak 
-public class RestApplication {
-
-}

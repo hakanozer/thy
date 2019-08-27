@@ -1,3 +1,0 @@
-INDEX VERSION 1.4+/Users/hakan/Documents/THY/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-3190565801.index
-3211676761.index

@@ -1,9 +1,0 @@
-package settings;
-
-public class Util {
-
-	// public -> proje içindeki her yerden görün
-	int num = 10;
-	
-	
-}

@@ -1,8 +1,0 @@
-package settings;
-
-public class Util {
-
-	 int num = 10;
-	
-	
-}

@@ -1,5 +1,0 @@
-package props;
-
-public interface UserInterface {
-
-}

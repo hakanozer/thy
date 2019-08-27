@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;appPackl&apos; to &apos;appPack&apos;&#x0A;- Original project: &apos;12-StreamApiUsing&apos;&#x0A;- Original element: &apos;12-StreamApiUsing/src/appPackl&apos;&#x0A;- Renamed element: &apos;12-StreamApiUsing/src/appPack&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;appPackl&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;appPackl" name="appPack" qualified="false" references="true" stamp="1565348794280" textual="false" version="1.0"/>
-</session>
