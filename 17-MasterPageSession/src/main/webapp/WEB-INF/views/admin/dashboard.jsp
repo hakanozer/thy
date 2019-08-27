@@ -157,7 +157,7 @@
                       <th style="width: 10px">#</th>
                       <th>Task</th>
                       <th>Progress</th>
-                      <th style="width: 40px">Action</th>
+                      <th style="width: 175px">Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -170,6 +170,7 @@
                       <td>${item.amail }</td>
                       <td>
                       	<a href='<s:url value="/admin/deleteAdmin/${ item.aid }"></s:url>' class="btn btn-danger"  >Delete</a>
+                      	<a href='<s:url value="/admin/updateAdmin/${ item.aid }"></s:url>' class="btn btn-info"  >Update</a>
                       </td>
                     </tr>
                     </c:forEach>

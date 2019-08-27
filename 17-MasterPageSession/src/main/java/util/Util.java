@@ -1,5 +1,6 @@
 package util;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
 public class Util {
@@ -7,6 +8,19 @@ public class Util {
 	public static String link = "dashboard";
 	
 	public static String control(HttpServletRequest req, String page) {
+		
+		// cookie control
+		if(req.getCookies() != null) {
+			Cookie[] arr = req.getCookies();
+			for (Cookie item : arr) {
+				if(item.getName().equals("user_cookie")) {
+					String aid = item.getValue();
+					req.getSession().setAttribute("aid", aid);
+					break;
+				}
+			}
+		}
+		
 		boolean statu = req.getSession().getAttribute("aid") == null;
 		if(statu) {
 			return "redirect:/admin/";
