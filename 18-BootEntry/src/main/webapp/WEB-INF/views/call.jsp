@@ -8,7 +8,9 @@
 </head>
 <body>
 
-<h1>Welcome Call</h1>
+<h1>Welcome Calling()</h1>
+<h2> ${ data }</h2>
+<h2> ${ sum.first_name } ${ sum.last_name }</h2>
 
 
 </body>

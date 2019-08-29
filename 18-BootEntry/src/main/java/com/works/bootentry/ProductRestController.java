@@ -11,22 +11,24 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/admin")
 public class ProductRestController {
 	
 	DB db = new DB();
 	
 	@RequestMapping(value = "/allActor", method = RequestMethod.GET)
-	public HashMap<String, Object> allActor(@RequestHeader HttpHeaders head) {
+	public HashMap<String, Object> allActor(@RequestHeader HttpHeaders head, @RequestParam(defaultValue = "") String api_key) {
 		System.out.println(head.getDate());
 		System.out.println(head.getHost());
 		System.out.println(head.getLocation());
 		HashMap<String, Object> hm = new HashMap<>();
 		hm.put("statu", true);
 		hm.put("list", dataResult());
-		return hm;
+		return Util.restControl(api_key, hm);
 	}
 	
 	public List<Actor> dataResult() {
