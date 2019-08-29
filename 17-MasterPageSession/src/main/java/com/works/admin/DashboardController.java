@@ -7,6 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,6 +31,7 @@ public class DashboardController {
 	@RequestMapping(value = "/dashboard", method = RequestMethod.GET)
 	public String dashBoard( HttpServletRequest req, Model model ) {
 		model.addAttribute("ls", dataResult());
+		currencyResult();
 		return Util.control(req, "dashboard");
 	}
 	
@@ -84,6 +89,24 @@ public class DashboardController {
 		
 		tr.commit();
 		return Util.control(req, "redirect:/admin/dashboard");
+	}
+	
+	
+	public void currencyResult() {
+		
+		try {
+			String url = "https://www.tcmb.gov.tr/kurlar/today.xml";
+			Document doc = Jsoup.connect(url).timeout(30000).ignoreContentType(true).get();
+			Elements list = doc.select("Currency");
+			for(Element item : list) {
+				String CurrencyName = item.getElementsByTag("CurrencyName").text();
+				System.out.println(CurrencyName);
+			}
+			System.out.println(doc.toString());
+		} catch (Exception e) {
+			System.err.println("Curency Error : " + e);
+		}
+		
 	}
 	
 	

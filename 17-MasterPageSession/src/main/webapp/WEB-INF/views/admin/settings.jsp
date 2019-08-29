@@ -109,7 +109,45 @@
         </div>
         <div class="row">
           
-          <h1>Welcome Settings</h1>
+          
+          <h1>Product List</h1>
+        	<div class="card" style="width: 100%"  >
+              <div class="card-header">
+                <h3 class="card-title">Bordered Table</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>                  
+                    <tr>
+                      <th style="width: 10px">Id</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Image</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                  <c:if test="${ not empty ls }">
+                  	<c:forEach items="${ls }"  var="item" >
+                    <tr>
+                      <td>${item.productId }</td>
+                      <td>${item.productName }</td>
+                      <td>${item.price }</td>
+                      <td>
+                      	<img class="img-thumbnail" src="${item.images[0].thumb }" width="75" />
+                      </td>
+                    </tr>
+                    </c:forEach>
+                  </c:if>
+                    
+                  </tbody>
+                </table>
+              </div>
+             
+            </div>
+          
+          
           
         </div>
       </div>
